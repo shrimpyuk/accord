@@ -89,11 +89,15 @@ final class Headers {
             "os": "Mac OS X",
             "browser": "Discord Client",
             "release_channel": "stable",
-            "client_version": "0.0.275",
+            "client_version": "0.0.282",
             "os_version": NSWorkspace.shared.kernelVersion,
             "os_arch": "arm64",
+            "app_arch": "arm64",
             "system_locale": "\(NSLocale.current.languageCode ?? "en")-\(NSLocale.current.regionCode ?? "US")",
+            "browser_user_agent": discordUserAgent,
+            "browser_version": "22.3.6",
             "client_build_number": dscVersion,
+            "native_build_number": NSNull(),
             "client_event_source": NSNull(),
         ]
         return try? JSONSerialization.data(withJSONObject: json, options: []).base64EncodedString()

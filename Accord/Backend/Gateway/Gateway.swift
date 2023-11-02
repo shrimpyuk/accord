@@ -93,7 +93,7 @@ final class Gateway {
         ("Pragma", "no-cache"),
         ("Origin", "https://discord.com"),
         ("Host", Gateway.gatewayURL.host ?? "gateway.discord.gg"),
-        ("Accept-Language", "en-CA,en-US;q=0.9,en;q=0.8"),
+        ("Accept-Language", "en-US"),
         ("Accept-Encoding", "gzip, deflate, br"),
     ]
 
